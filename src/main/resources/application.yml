@@ -1,0 +1,6 @@
+spring:
+  datasource:
+    driver-class-name: "com.mysql.jdbc.Driver"
+    url: "jdbc:mysql://14.63.193.190:3306/cosmetic?useUnicode=true&charaterEncoding=utf-8"
+    username: "mymy"
+    password: "12345"
