@@ -1,23 +1,21 @@
 package com.example.demo.controller;
-
-import com.example.demo.domain.CosmeticVO;
+import com.example.demo.domain.MypageVO;
 import com.example.demo.domain.ResultVO;
-import com.example.demo.persistence.CosmeticMapper;
+import com.example.demo.persistence.MypageMapper;
 import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
+import java.util.Locale;
 
 @RestController
 @RequestMapping("/api")
-public class CosmeticController {
+public class MypageController {
     @Autowired
-    private CosmeticMapper cosmeticMapper;
-
-    @PostMapping("/cosmetic")
-    public ResultVO addCosmetic(@RequestBody CosmeticVO cosmetic) {
-        int result = cosmeticMapper.insertCosmetic(cosmetic);
+    private MypageMapper mypageMapper;
+    @PostMapping("/mypage")
+    public ResultVO addCosmetic(@RequestBody MypageVO mypage) {
+        int result = mypageMapper.insertMypage(mypage);
         if (result > 0) {
             return new ResultVO(0, "success");
         } else {

@@ -1,23 +1,23 @@
 package com.example.demo.controller;
-
-import com.example.demo.domain.CosmeticVO;
+import com.example.demo.domain.CategoryVO;
 import com.example.demo.domain.ResultVO;
-import com.example.demo.persistence.CosmeticMapper;
+import com.example.demo.persistence.CategoryMapper;
 import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Locale;
 
 @RestController
 @RequestMapping("/api")
-public class CosmeticController {
+public class CategoryController {
     @Autowired
-    private CosmeticMapper cosmeticMapper;
+    private CategoryMapper categoryMapper;
 
-    @PostMapping("/cosmetic")
-    public ResultVO addCosmetic(@RequestBody CosmeticVO cosmetic) {
-        int result = cosmeticMapper.insertCosmetic(cosmetic);
+    @PostMapping("/category")
+    public ResultVO addCosmetic(@RequestBody CategoryVO category) {
+        int result = categoryMapper.insertCategory(category);
         if (result > 0) {
             return new ResultVO(0, "success");
         } else {

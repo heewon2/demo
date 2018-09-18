@@ -9,8 +9,8 @@ import java.util.List;
 @Mapper
 public interface CosmeticMapper {
     @Insert({"<script>",
-            "INSERT INTO cosmetic(cosmetic_id,name,category_id,picture)",
-            "VALUES(#{cosmetic_id}, #{name}, #{category_id}, #{picture}, now())",
+            " INSERT INTO work(cosmetic_id,name,category_id,picture,mypage_id,created)",
+            " VALUES(#{cosmetic_id}, #{name}, #{category_id}, #{picture}, #{mypage_id},now())",
             "</script>"})
     int insertCosmetic(CosmeticVO cosmetic);
 }
