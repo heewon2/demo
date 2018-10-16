@@ -2,6 +2,7 @@ package com.example.demo;
 
 import com.example.demo.domain.MemberVO;
 import com.example.demo.persistence.ApiMapper;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,7 +20,8 @@ public class ApiMapperTest {
 //    @Autowired
 //    private ApiMapper mapper;
 
-    @Test
+   @Ignore
+   @Test
     public void addMember() {
         MemberVO member = new MemberVO();
         member.setMember_id(11);

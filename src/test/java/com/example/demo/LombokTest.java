@@ -2,6 +2,7 @@ package com.example.demo;
 
 import com.example.demo.domain.ResultVO;
 import lombok.Data;
+import org.junit.Ignore;
 import org.junit.Test;
 
 /**
@@ -9,6 +10,7 @@ import org.junit.Test;
  */
 public class LombokTest {
 
+    @Ignore
     @Test
     public void ResultTest() {
         ResultVO result = new ResultVO();
