@@ -8,7 +8,7 @@ public class CategoryVO {
     private Integer category_id;
     private String category_name;
     private Integer exp_data;
-    private Integer exp_data_open;
+    private String exp_data_open;
 
     public Integer getCategory_id() {
         return category_id;
@@ -34,11 +34,11 @@ public class CategoryVO {
         this.exp_data = exp_data;
     }
 
-    public Integer getExp_data_open() {
+    public String getExp_data_open() {
         return exp_data_open;
     }
 
-    public void setExp_data_open(Integer exp_data_open) {
+    public void setExp_data_open(String exp_data_open) {
         this.exp_data_open = exp_data_open;
     }
 }

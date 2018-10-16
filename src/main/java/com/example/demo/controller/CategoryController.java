@@ -16,7 +16,7 @@ public class CategoryController {
     private CategoryMapper categoryMapper;
 
     @PostMapping("/category")
-    public ResultVO addCosmetic(@RequestBody CategoryVO category) {
+    public ResultVO addCategory(@RequestBody CategoryVO category) {
         int result = categoryMapper.insertCategory(category);
         if (result > 0) {
             return new ResultVO(0, "success");

@@ -14,7 +14,6 @@ public class MemberVO {
     private String name;
     private String created;
     private String updated;
-    private Integer mypage_id;
 
     public Integer getMember_id() {
         return member_id;
@@ -62,13 +61,5 @@ public class MemberVO {
 
     public void setUpdated(String updated) {
         this.updated = updated;
-    }
-
-    public Integer getMypage_id() {
-        return mypage_id;
-    }
-
-    public void setMypage_id(Integer mypage_id) {
-        this.mypage_id = mypage_id;
     }
 }

@@ -6,11 +6,13 @@ import lombok.Data;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class MypageVO {
     private Integer mypage_id;
-    private String memo;
-    private String image;
-    private Integer alarm_date;
     private Integer cosmetic_id;
     private Integer member_id;
+    private String memo;
+    private String image;
+    private String add_name;
+    private String made_date;
+    private Integer alarm_date;
 
     public Integer getMypage_id() {
         return mypage_id;
@@ -34,6 +36,20 @@ public class MypageVO {
 
     public void setImage(String image) {
         this.image = image;
+    }
+
+    public String getAdd_name() { return add_name; }
+
+    public void setAdd_name(String add_name) {
+        this.add_name = add_name;
+    }
+
+    public String getMade_date() {
+        return made_date;
+    }
+
+    public void setMade_date(String made_date) {
+        this.made_date = made_date;
     }
 
     public Integer getAlarm_date() {

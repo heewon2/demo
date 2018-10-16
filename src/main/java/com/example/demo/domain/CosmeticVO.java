@@ -9,7 +9,6 @@ public class CosmeticVO {
     private String name;
     private Integer category_id;
     private String picture;
-    private Integer mypage_id;
 
     public Integer getCosmetic_id() {
         return cosmetic_id;
@@ -41,14 +40,6 @@ public class CosmeticVO {
 
     public void setPicture(String picture) {
         this.picture = picture;
-    }
-
-    public Integer getMypage_id() {
-        return mypage_id;
-    }
-
-    public void setMypage_id(Integer mypage_id) {
-        this.mypage_id = mypage_id;
     }
 }
 

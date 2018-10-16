@@ -9,8 +9,8 @@ import org.springframework.stereotype.Repository;
 @Mapper
 public interface MypageMapper {
     @Insert({"<script>",
-            " INSERT INTO mypage(mypage_id,memo,image, alarm_date, cosmetic_id, member_id)",
-            " VALUES(#{mypage_id}, #{memo}, #{image}, #{alarm_date}, #{cosmetic_id},#{member_id})",
+            " INSERT INTO mypage(mypage_id,cosmetic_id, member_id,memo,image,add_name,made_date,alarm_date)",
+            " VALUES(#{mypage_id}, #{cosmetic_id},#{member_id}, #{memo}, #{image}, #{add_name}, #{made_date},#{alarm_date})",
             "</script>"})
 
     int insertMypage(MypageVO mypage);

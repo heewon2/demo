@@ -13,8 +13,8 @@ import org.springframework.stereotype.Repository;
 public interface ApiMapper {
 
     @Insert({"<script>",
-            " INSERT INTO member(member_id, fcm_id, password, name, created, updated, mypage_id)",
-            " VALUES(#{member_id}, #{fcm_id}, #{password}, #{name}, now(), now(), #{mypage_id})",
+            " INSERT INTO member(member_id, fcm_id, password, name, created, updated)",
+            " VALUES(#{member_id}, #{fcm_id}, #{password}, #{name}, now(), now())",
             "</script>"})
     int addMember(MemberVO member);
 }
